@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Curso</string>
+    <string name="message">Learning Android with Kotlin!</string>
+</resources>
