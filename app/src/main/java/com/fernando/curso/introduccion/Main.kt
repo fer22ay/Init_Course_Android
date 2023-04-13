@@ -16,6 +16,8 @@ fun main() {
 
     mainValuesNull()
 
+    Elemento(Persona("Gaston", "Saillen", 25))
+
 }
 
 fun String.removerPrimerCaracter() : String = this.substring(1)
@@ -38,4 +40,22 @@ fun mainValuesNull() {
     // !! = Le digo explicitamente que no va ser null
     //println(nombre2)
 
+}
+
+/**
+ *
+ */
+fun genericos() {
+    val lista = arrayOf("Gaston", "24")
+}
+
+data class Persona(val nombre: String, val apellido: String, val edad: Int)
+
+/**
+ * Clase generica
+ */
+class Elemento<T>(value: T) {
+    init {
+        println("El valor es $value")
+    }
 }
